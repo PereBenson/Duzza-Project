@@ -1,0 +1,110 @@
+import type { ContentMeta, InventoryItem } from "@/content/types";
+
+const demoMeta = (source: string): ContentMeta => ({
+  status: "demo",
+  approval: "pending",
+  mustReplace: true,
+  source,
+  note: "Illustrative inventory line. Quantity, configuration, ownership and availability require client confirmation.",
+});
+
+export const inventoryItems = [
+  {
+    category: "Survey acquisition",
+    name: "Multibeam echosounder",
+    quantity: "1 system",
+    configuration: "Portable shallow-to-medium water swath configuration",
+    meta: demoMeta("Illustrative equipment inventory line"),
+  },
+  {
+    category: "Survey acquisition",
+    name: "Single-beam echosounder",
+    quantity: "2 units",
+    configuration: "Depth sounding and check-line configuration",
+    meta: demoMeta("Illustrative equipment inventory line"),
+  },
+  {
+    category: "Survey acquisition",
+    name: "Side-scan sonar",
+    quantity: "1 system",
+    configuration: "Towed dual-frequency seabed imaging configuration",
+    meta: demoMeta("Illustrative equipment inventory line"),
+  },
+  {
+    category: "Survey acquisition",
+    name: "Sub-bottom profiler",
+    quantity: "1 system",
+    configuration: "Shallow sub-seabed profiling configuration",
+    meta: demoMeta("Illustrative equipment inventory line"),
+  },
+  {
+    category: "Survey acquisition",
+    name: "Acoustic Doppler current profiler",
+    quantity: "2 units",
+    configuration: "Current profile and discharge measurement configuration",
+    meta: demoMeta("Illustrative equipment inventory line"),
+  },
+  {
+    category: "Survey acquisition",
+    name: "Water-level sensor",
+    quantity: "2 units",
+    configuration: "Coastal and nearshore water-level logging configuration",
+    meta: demoMeta("Illustrative equipment inventory line"),
+  },
+  {
+    category: "Positioning",
+    name: "GNSS / INS positioning system",
+    quantity: "2 systems",
+    configuration: "RTK positioning with heading and motion output",
+    meta: demoMeta("Illustrative equipment inventory line"),
+  },
+  {
+    category: "Positioning",
+    name: "RTK base and rover set",
+    quantity: "2 sets",
+    configuration: "Survey control and checkpoint configuration",
+    meta: demoMeta("Illustrative equipment inventory line"),
+  },
+  {
+    category: "Positioning",
+    name: "Total station",
+    quantity: "2 units",
+    configuration: "Topographic and control survey configuration",
+    meta: demoMeta("Illustrative equipment inventory line"),
+  },
+  {
+    category: "Positioning",
+    name: "USBL acoustic positioning",
+    quantity: "1 system",
+    configuration: "Subsea target positioning interface",
+    meta: demoMeta("Illustrative equipment inventory line"),
+  },
+  {
+    category: "Platforms & support",
+    name: "Unmanned survey vessel",
+    quantity: "1 platform",
+    configuration: "Shallow-water survey platform with modular payload bay",
+    meta: demoMeta("Illustrative equipment inventory line"),
+  },
+  {
+    category: "Platforms & support",
+    name: "Survey RIB",
+    quantity: "1 vessel",
+    configuration: "Nearshore survey support and crew transfer",
+    meta: demoMeta("Illustrative equipment inventory line"),
+  },
+  {
+    category: "Platforms & support",
+    name: "Sensor mounting kit",
+    quantity: "2 kits",
+    configuration: "Over-the-side and hull-mount options",
+    meta: demoMeta("Illustrative equipment inventory line"),
+  },
+  {
+    category: "Platforms & support",
+    name: "Acquisition and processing workstation",
+    quantity: "2 units",
+    configuration: "Field acquisition and bathymetric processing setup",
+    meta: demoMeta("Illustrative equipment inventory line"),
+  },
+] satisfies readonly InventoryItem[];

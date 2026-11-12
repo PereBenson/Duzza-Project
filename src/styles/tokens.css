@@ -1,0 +1,49 @@
+/*
+ * DUZZA GROUP design tokens.
+ * All raw colour values live here. Components consume Tailwind utilities or
+ * semantic custom properties only.
+ */
+@theme {
+  --color-carbon: #111318;
+  --color-chalk: #f4f3ef;
+  --color-signal: #c8f169;
+  --color-signal-deep: #b4dc55;
+  --color-steel: #7c838c;
+  --color-steel-strong: #5b626b;
+  --color-mist: #e5e7e4;
+  --color-white: #ffffff;
+  --color-error: #b42318;
+
+  --font-display: var(--font-space-grotesk), "Avenir Next", "Segoe UI", sans-serif;
+  --font-sans: var(--font-inter), "Segoe UI", Arial, sans-serif;
+  --font-mono: var(--font-ibm-plex-mono), "Cascadia Mono", Consolas, monospace;
+
+  --radius-control: 6px;
+  --radius-card: 12px;
+  --radius-media: 16px;
+
+  --breakpoint-sm: 30rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 80rem;
+  --breakpoint-2xl: 90rem;
+}
+
+@theme inline {
+  --color-ink: var(--color-carbon);
+  --color-canvas: var(--color-chalk);
+  --color-surface: var(--color-white);
+  --color-line: var(--color-mist);
+  --color-accent: var(--color-signal);
+  --color-accent-strong: var(--color-signal-deep);
+  --color-muted: var(--color-steel-strong);
+}
+
+:root {
+  --color-text: var(--color-carbon);
+  --color-page: var(--color-chalk);
+  --color-border: var(--color-mist);
+  --color-action: var(--color-signal);
+  --color-action-strong: var(--color-signal-deep);
+  --color-secondary-text: var(--color-steel-strong);
+}
